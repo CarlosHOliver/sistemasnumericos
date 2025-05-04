@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação: Sistemas Numéricos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js for dynamic graphs -->
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Título -->
+        <section class="slide active" id="slide1">
+            <h1>Sistemas Numéricos</h1>
+            <h2>Uma Exploração Interativa</h2>
+            <p>Desenvolvido por Carlos Henrique</p>
+            <p><a href="https://www.linkedin.com/in/carlosoliver/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </section>
+
+        <!-- Slide 2: Introdução -->
+        <section class="slide" id="slide2">
+            <h2>Introdução aos Sistemas Numéricos</h2>
+            <p>Bem-vindo! Exploraremos os sistemas numéricos: Decimal, Binário, Octal e Hexadecimal.</p>
+            <p>Aprenda como funcionam, como converter entre eles e teste seus conhecimentos.</p>
+        </section>
+
+        <!-- Slide 3: Por que aprender? -->
+        <section class="slide" id="slide3">
+            <h2>Por Que Aprender?</h2>
+            <p>Sistemas numéricos são a base da computação e matemática.</p>
+            <p>Decimal (Base 10): Nosso dia a dia.</p>
+            <p>Binário (Base 2): Linguagem dos computadores.</p>
+            <p>Essencial para Ciência da Computação, Engenharia e Matemática.</p>
+        </section>
+
+        <!-- Slide 4: Sistema Decimal (Base 10) - Parte 1 -->
+        <section class="slide" id="slide4">
+            <h2>Sistema Decimal (Base 10)</h2>
+            <p>Usamos no cotidiano (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).</p>
+            <p><strong>Posicional:</strong> O valor do dígito depende da sua posição.</p>
+            <p>Cada posição é uma potência de 10 (10<sup>0</sup>, 10<sup>1</sup>, 10<sup>2</sup>...).</p>
+            <p>Exemplo: <strong>345</strong> = (3 × 10<sup>2</sup>) + (4 × 10<sup>1</sup>) + (5 × 10<sup>0</sup>) = 300 + 40 + 5.</p>
+        </section>
+
+        <!-- Slide 5: Sistema Binário (Base 2) - Parte 1 -->
+        <section class="slide" id="slide5">
+            <h2>Sistema Binário (Base 2)</h2>
+            <p>A linguagem fundamental dos computadores.</p>
+            <p>Apenas dois dígitos: <strong>0</strong> e <strong>1</strong> (bits).</p>
+            <p>Ideal para circuitos eletrônicos (ligado/desligado, verdadeiro/falso).</p>
+        </section>
+
+        <!-- Slide 6: Sistema Binário (Base 2) - Parte 2 -->
+        <section class="slide" id="slide6">
+            <h2>Sistema Binário (Base 2) - Posições</h2>
+            <p>Também é posicional.</p>
+            <p>Cada posição é uma potência de 2 (2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>, 2<sup>3</sup>...).</p>
+            <p>Exemplo: <strong>1101</strong><sub>2</sub> = (1 × 2<sup>3</sup>) + (1 × 2<sup>2</sup>) + (0 × 2<sup>1</sup>) + (1 × 2<sup>0</sup>)</p>
+            <p>= 8 + 4 + 0 + 1 = <strong>13</strong><sub>10</sub>.</p>
+        </section>
+
+        <!-- Slide 7: Sistema Octal (Base 8) - Parte 1 -->
+        <section class="slide" id="slide7">
+            <h2>Sistema Octal (Base 8)</h2>
+            <p>Usa 8 dígitos: 0, 1, 2, 3, 4, 5, 6, 7.</p>
+            <p>Posicional: Cada posição é uma potência de 8 (8<sup>0</sup>, 8<sup>1</sup>, 8<sup>2</sup>...).</p>
+            <p>Relação com Binário: 8 = 2<sup>3</sup>. Cada dígito octal = 3 bits.</p>
+            <p>Ex: 7<sub>8</sub> = 111<sub>2</sub>; 4<sub>8</sub> = 100<sub>2</sub>.</p>
+        </section>
+
+        <!-- Slide 8: Sistema Octal (Base 8) - Conversão -->
+        <section class="slide" id="slide8">
+            <h2>Sistema Octal (Base 8) - Conversão</h2>
+            <p><strong>Binário para Octal:</strong> Agrupar bits em 3 (direita para esquerda).</p>
+            <p>Ex: 11010110<sub>2</sub> -> (011)(010)(110)<sub>2</sub> = 326<sub>8</sub>.</p>
+            <p><strong>Octal para Decimal:</strong> Expansão pela base 8.</p>
+            <p>Ex: 326<sub>8</sub> = (3 × 8<sup>2</sup>) + (2 × 8<sup>1</sup>) + (6 × 8<sup>0</sup>) = 192 + 16 + 6 = 214<sub>10</sub>.</p>
+        </section>
+
+        <!-- Slide 9: Sistema Hexadecimal (Base 16) - Parte 1 -->
+        <section class="slide" id="slide9">
+            <h2>Sistema Hexadecimal (Base 16)</h2>
+            <p>Muito usado em computação (memória, cores).</p>
+            <p>16 símbolos: 0-9 e A-F (A=10, B=11, C=12, D=13, E=14, F=15).</p>
+            <p>Posicional: Cada posição é uma potência de 16 (16<sup>0</sup>, 16<sup>1</sup>, 16<sup>2</sup>...).</p>
+        </section>
+
+        <!-- Slide 10: Sistema Hexadecimal (Base 16) - Parte 2 -->
+        <section class="slide" id="slide10">
+            <h2>Sistema Hexadecimal (Base 16) - Relação com Binário</h2>
+            <p>Relação direta: 16 = 2<sup>4</sup>.</p>
+            <p>Cada dígito hexadecimal = 4 bits (nibble).</p>
+            <p><strong>Binário para Hexadecimal:</strong> Agrupar bits em 4 (direita para esquerda).</p>
+            <p>Ex: 11010110<sub>2</sub> -> (1101)(0110)<sub>2</sub> = D6<sub>16</sub>.</p>
+            <p>(1101<sub>2</sub> = 13<sub>10</sub> = D<sub>16</sub>; 0110<sub>2</sub> = 6<sub>10</sub> = 6<sub>16</sub>)</p>
+        </section>
+
+        <!-- Slide 11: Sistema Hexadecimal (Base 16) - Conversão -->
+        <section class="slide" id="slide11">
+            <h2>Sistema Hexadecimal (Base 16) - Conversão</h2>
+            <p><strong>Hexadecimal para Decimal:</strong> Expansão pela base 16.</p>
+            <p>Ex: D6<sub>16</sub> = (D × 16<sup>1</sup>) + (6 × 16<sup>0</sup>)</p>
+            <p>= (13 × 16) + (6 × 1) = 208 + 6 = 214<sub>10</sub>.</p>
+            <p>Muito mais conciso que binário (D6 vs 11010110).</p>
+        </section>
+
+        <!-- Slide 12: Tabela Comparativa -->
+        <section class="slide" id="slide12">
+            <h2>Tabela Comparativa</h2>
+            <p>Veja os valores de 0 a 16 nas diferentes bases:</p>
+            <div class="table-container" style="width: 80%; max-height: 60vh; overflow-y: auto;">
+                <style>
+                    .table-container table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 15px;
+                    }
+                    .table-container th, .table-container td {
+                        border: 1px solid #81C3D7; /* Azul Mais Claro Destaque */
+                        padding: 8px;
+                        text-align: center;
+                        background-color: white;
+                    }
+                    .table-container th {
+                        background-color: #3A7CA5; /* Azul Claro */
+                        color: white;
+                    }
+                    .table-container tr:nth-child(even) td {
+                        background-color: #f2f9fc; /* Tom de azul bem claro para linhas pares */
+                    }
+                </style>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Decimal (10)</th>
+                            <th>Binário (2)</th>
+                            <th>Octal (8)</th>
+                            <th>Hexadecimal (16)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>0000</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>0001</td><td>1</td><td>1</td></tr>
+                        <tr><td>2</td><td>0010</td><td>2</td><td>2</td></tr>
+                        <tr><td>3</td><td>0011</td><td>3</td><td>3</td></tr>
+                        <tr><td>4</td><td>0100</td><td>4</td><td>4</td></tr>
+                        <tr><td>5</td><td>0101</td><td>5</td><td>5</td></tr>
+                        <tr><td>6</td><td>0110</td><td>6</td><td>6</td></tr>
+                        <tr><td>7</td><td>0111</td><td>7</td><td>7</td></tr>
+                        <tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+                        <tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+                        <tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+                        <tr><td>11</td><td>1011</td><td>13</td><td>B</td></tr>
+                        <tr><td>12</td><td>1100</td><td>14</td><td>C</td></tr>
+                        <tr><td>13</td><td>1101</td><td>15</td><td>D</td></tr>
+                        <tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
+                        <tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
+                        <tr><td>16</td><td>10000</td><td>20</td><td>10</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Slide 13: Gráfico Comparativo -->
+        <section class="slide" id="slide13">
+            <h2>Gráfico: Crescimento de Dígitos</h2>
+            <p>Observe como bases menores (Binário) precisam de mais dígitos.</p>
+            <div class="chart-container" style="position: relative; height:60vh; width:80vw; margin: auto;">
+                <canvas id="digitGrowthChart"></canvas>
+            </div>
+            <p style="font-size: 0.8em; margin-top: 10px;">O gráfico será carregado quando este slide estiver ativo.</p>
+        </section>
+
+        <!-- Slide 14: Exercício 1 -->
+        <section class="slide" id="slide14">
+            <h2>Exercício 1: Decimal para Binário</h2>
+            <p>Converta o número decimal <strong>42</strong> para o sistema binário.</p>
+            <button class="toggle-resposta" onclick="toggleResposta('resp1')">Mostrar/Ocultar Resposta</button>
+            <div id="resp1" class="resposta" style="display: none; margin-top: 15px; background-color: #f0f8ff; padding: 10px; border-radius: 5px; width: 80%; text-align: left;">
+                <h4>Resposta Explicada:</h4>
+                <p>Divisões sucessivas por 2:</p>
+                <ul style="list-style-position: inside;">
+                    <li>42 ÷ 2 = 21, resto <strong>0</strong></li>
+                    <li>21 ÷ 2 = 10, resto <strong>1</strong></li>
+                    <li>10 ÷ 2 = 5, resto <strong>0</strong></li>
+                    <li>5 ÷ 2 = 2, resto <strong>1</strong></li>
+                    <li>2 ÷ 2 = 1, resto <strong>0</strong></li>
+                    <li>1 ÷ 2 = 0, resto <strong>1</strong></li>
+                </ul>
+                <p>Lendo os restos de baixo para cima: <strong>101010</strong><sub>2</sub>.</p>
+            </div>
+        </section>
+
+        <!-- Slide 15: Exercício 2 -->
+        <section class="slide" id="slide15">
+            <h2>Exercício 2: Binário para Hexadecimal</h2>
+            <p>Converta o número binário <strong>11101011</strong> para o sistema hexadecimal.</p>
+            <button class="toggle-resposta" onclick="toggleResposta('resp2')">Mostrar/Ocultar Resposta</button>
+            <div id="resp2" class="resposta" style="display: none; margin-top: 15px; background-color: #f0f8ff; padding: 10px; border-radius: 5px; width: 80%; text-align: left;">
+                <h4>Resposta Explicada:</h4>
+                <p>Agrupar bits em 4 (direita para esquerda): (1110)(1011)</p>
+                <ul style="list-style-position: inside;">
+                    <li>1011<sub>2</sub> = 11<sub>10</sub> = <strong>B</strong><sub>16</sub></li>
+                    <li>1110<sub>2</sub> = 14<sub>10</sub> = <strong>E</strong><sub>16</sub></li>
+                </ul>
+                <p>Resultado: <strong>EB</strong><sub>16</sub>.</p>
+            </div>
+        </section>
+
+        <!-- Slide 16: Exercício 3 -->
+        <section class="slide" id="slide16">
+            <h2>Exercício 3: Octal para Decimal</h2>
+            <p>Converta o número octal <strong>75</strong> para o sistema decimal.</p>
+            <button class="toggle-resposta" onclick="toggleResposta('resp3')">Mostrar/Ocultar Resposta</button>
+            <div id="resp3" class="resposta" style="display: none; margin-top: 15px; background-color: #f0f8ff; padding: 10px; border-radius: 5px; width: 80%; text-align: left;">
+                <h4>Resposta Explicada:</h4>
+                <p>Expansão pela base 8:</p>
+                <p>75<sub>8</sub> = (7 × 8<sup>1</sup>) + (5 × 8<sup>0</sup>)</p>
+                <p>= (7 × 8) + (5 × 1) = 56 + 5 = <strong>61</strong><sub>10</sub>.</p>
+            </div>
+        </section>
+
+        <!-- Slide 17: Exercício 4 -->
+        <section class="slide" id="slide17">
+            <h2>Exercício 4: Hexadecimal para Decimal</h2>
+            <p>Converta o número hexadecimal <strong>1A3</strong> para o sistema decimal.</p>
+            <button class="toggle-resposta" onclick="toggleResposta('resp4')">Mostrar/Ocultar Resposta</button>
+            <div id="resp4" class="resposta" style="display: none; margin-top: 15px; background-color: #f0f8ff; padding: 10px; border-radius: 5px; width: 80%; text-align: left;">
+                <h4>Resposta Explicada:</h4>
+                <p>Expansão pela base 16 (A=10):</p>
+                <p>1A3<sub>16</sub> = (1 × 16<sup>2</sup>) + (10 × 16<sup>1</sup>) + (3 × 16<sup>0</sup>)</p>
+                <p>= (1 × 256) + (10 × 16) + (3 × 1) = 256 + 160 + 3 = <strong>419</strong><sub>10</sub>.</p>
+            </div>
+        </section>
+
+        <!-- Slide 18: Conversor Interativo -->
+        <section class="slide" id="slide18">
+            <h2>Conversor Interativo</h2>
+            <p>Converta números entre as bases em tempo real!</p>
+            <div class="conversor-container" style="width: 80%; margin-top: 20px;">
+                 <style>
+                    .conversor-grupo {
+                        margin-bottom: 15px;
+                        display: flex;
+                        flex-direction: column; /* Empilha label e input */
+                        align-items: center; /* Centraliza itens */
+                    }
+                    .conversor-grupo label {
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                        color: #2F6690; /* Azul Médio */
+                        width: 80%; /* Largura do label */
+                        text-align: left; /* Alinha texto do label à esquerda */
+                    }
+                    .conversor-grupo input {
+                        padding: 10px;
+                        border: 1px solid #81C3D7; /* Azul Mais Claro Destaque */
+                        border-radius: 4px;
+                        width: 80%; /* Largura do input */
+                        box-sizing: border-box;
+                        font-size: 1em;
+                    }
+                    .erro-msg {
+                        color: red;
+                        margin-top: 10px;
+                        font-weight: bold;
+                    }
+                </style>
+                <div class="conversor-grupo">
+                    <label for="decimalInput">Decimal (Base 10):</label>
+                    <input type="text" id="decimalInput" placeholder="Ex: 42">
+                </div>
+                <div class="conversor-grupo">
+                    <label for="binarioInput">Binário (Base 2):</label>
+                    <input type="text" id="binarioInput" placeholder="Ex: 101010">
+                </div>
+                <div class="conversor-grupo">
+                    <label for="octalInput">Octal (Base 8):</label>
+                    <input type="text" id="octalInput" placeholder="Ex: 52">
+                </div>
+                <div class="conversor-grupo">
+                    <label for="hexadecimalInput">Hexadecimal (Base 16):</label>
+                    <input type="text" id="hexadecimalInput" placeholder="Ex: 2A">
+                </div>
+                <div id="erroConversor" class="erro-msg" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- Slide 19: Conclusão -->
+        <section class="slide" id="slide19">
+            <h2>Conclusão</h2>
+            <p>Parabéns! Você explorou os sistemas numéricos Decimal, Binário, Octal e Hexadecimal.</p>
+            <p>Compreender essas bases é fundamental para a tecnologia moderna.</p>
+            <p>Continue praticando com os exercícios e o conversor!</p>
+            <p>Desenvolvido por Carlos Henrique - <a href="https://www.linkedin.com/in/carlosoliver/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </section>
+
+    </div> <!-- Fechamento do .presentation-container -->
+
+    <div class="navigation-controls">
+        <button id="prevBtn">Anterior</button>
+        <span id="slideCounter">Slide 1 / 19</span>
+        <button id="nextBtn">Próximo</button>
+        <button id="fullscreenBtn" style="margin-left: 15px;">Tela Cheia</button> <!-- Botão Tela Cheia -->
+    </div>
+
+    <script src="script.js"></script>
+    <script src="conversor.js"></script>
+</body>
+</html>
