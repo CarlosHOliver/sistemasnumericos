@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Numéricos - Explicações e Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sistemas Numéricos: Uma Exploração Completa</h1>
+        <nav>
+            <ul>
+                <li><a href="#decimal">Decimal</a></li>
+                <li><a href="#binario">Binário</a></li>
+                <li><a href="#octal">Octal</a></li>
+                <li><a href="#hexadecimal">Hexadecimal</a></li>
+                <li><a href="#comparativo">Comparativo</a></li>
+                <li><a href="#exercicios">Exercícios</a></li>
+                <li><a href="#conversor">Conversor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>Introdução aos Sistemas Numéricos</h2>
+            <p>Bem-vindo ao nosso guia completo sobre sistemas numéricos! Nesta página, exploraremos os fundamentos dos sistemas mais comuns utilizados na computação e matemática: decimal, binário, octal e hexadecimal. Você aprenderá como cada sistema funciona, como converter números entre eles e poderá testar seus conhecimentos com exercícios práticos. Além disso, oferecemos um conversor interativo para facilitar suas conversões em tempo real.</p>
+            <p>Os sistemas numéricos são a base para representar quantidades e realizar cálculos. Embora o sistema decimal seja o mais familiar em nosso cotidiano, outros sistemas, como o binário, são fundamentais para o funcionamento interno dos computadores. Compreender esses diferentes sistemas é essencial para estudantes e profissionais das áreas de ciência da computação, engenharia e matemática.</p>
+        </section>
+
+        <section id="decimal">
+            <h2>Sistema Decimal (Base 10)</h2>
+            <p>O sistema numérico decimal, também conhecido como base 10, é o sistema que utilizamos em nosso dia a dia. Sua popularidade e uso generalizado derivam do fato de termos dez dedos nas mãos, o que historicamente facilitou a contagem e a representação de quantidades. Este sistema utiliza dez dígitos distintos: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9. A característica fundamental do sistema decimal é a sua natureza posicional, onde o valor de cada dígito depende não apenas do dígito em si, mas também de sua posição dentro do número. Cada posição representa uma potência de 10, começando com 10<sup>0</sup> (que é igual a 1) na posição mais à direita (a casa das unidades), seguida por 10<sup>1</sup> (dezenas), 10<sup>2</sup> (centenas), e assim por diante. Por exemplo, o número 345 pode ser decomposto como (3 × 10<sup>2</sup>) + (4 × 10<sup>1</sup>) + (5 × 10<sup>0</sup>), o que resulta em 300 + 40 + 5 = 345. Essa estrutura permite representar qualquer quantidade, por maior ou menor que seja, de forma clara e organizada, tornando as operações aritméticas como adição, subtração, multiplicação e divisão relativamente intuitivas.</p>
+            <p>A simplicidade e a familiaridade do sistema decimal o tornam a base para o ensino da matemática e para a maioria das transações e medições no mundo. No entanto, no contexto da computação e da tecnologia digital, outros sistemas numéricos, como o binário, octal e hexadecimal, desempenham papéis cruciais devido à forma como os computadores processam e armazenam informações. Mesmo assim, a compreensão profunda do sistema decimal é o ponto de partida essencial para entender esses outros sistemas e as conversões entre eles. A notação posicional e o conceito de base são universais e aplicam-se a todos os sistemas numéricos, facilitando a transição do pensamento decimal para outras bases.</p>
+        </section>
+        <section id="binario">
+            <h2>Sistema Binário (Base 2)</h2>
+            <p>O sistema numérico binário, ou base 2, é a linguagem fundamental dos computadores e de todos os dispositivos digitais. Diferente do sistema decimal que utiliza dez dígitos, o sistema binário opera com apenas dois dígitos: 0 e 1. Cada um desses dígitos é chamado de "bit" (abreviação de "binary digit"). A simplicidade de ter apenas dois estados (ligado/desligado, verdadeiro/falso, presença/ausência de corrente elétrica) torna o sistema binário ideal para representar informações em circuitos eletrônicos. Toda a lógica computacional, desde operações aritméticas complexas até o armazenamento de dados e a execução de instruções, é, em seu nível mais fundamental, baseada em manipulações desses bits.</p>
+            <p>Assim como o sistema decimal, o binário também é posicional. O valor de um dígito binário depende de sua posição no número, onde cada posição representa uma potência de 2. A posição mais à direita representa 2<sup>0</sup> (1), a próxima à esquerda representa 2<sup>1</sup> (2), depois 2<sup>2</sup> (4), 2<sup>3</sup> (8), e assim sucessivamente. Por exemplo, o número binário 1101 pode ser convertido para decimal da seguinte forma: (1 × 2<sup>3</sup>) + (1 × 2<sup>2</sup>) + (0 × 2<sup>1</sup>) + (1 × 2<sup>0</sup>) = (1 × 8) + (1 × 4) + (0 × 2) + (1 × 1) = 8 + 4 + 0 + 1 = 13 em decimal. Embora números binários possam parecer longos e complexos para nós, eles são perfeitamente adequados para a arquitetura dos processadores e memórias digitais. A compreensão do sistema binário é, portanto, indispensável para qualquer pessoa que deseje aprofundar seus conhecimentos em ciência da computação, eletrônica digital ou áreas correlatas.</p>
+        </section>
+        <section id="octal">
+            <h2>Sistema Octal (Base 8)</h2>
+            <p>O sistema numérico octal, ou base 8, utiliza oito dígitos distintos: 0, 1, 2, 3, 4, 5, 6 e 7. Assim como os sistemas decimal e binário, o octal é um sistema posicional, onde cada posição representa uma potência de 8. A posição mais à direita corresponde a 8<sup>0</sup> (1), a seguinte a 8<sup>1</sup> (8), depois 8<sup>2</sup> (64), e assim por diante. Historicamente, o sistema octal foi bastante utilizado em computação, principalmente em sistemas mais antigos, como uma forma mais compacta e legível de representar números binários. Isso ocorre porque a base 8 é uma potência de 2 (8 = 2<sup>3</sup>), o que significa que cada dígito octal pode representar exatamente três dígitos binários. Por exemplo, o dígito octal 7 equivale a 111 em binário, e o dígito 4 equivale a 100.</p>
+            <p>A conversão entre binário e octal é, portanto, direta. Para converter um número binário para octal, agrupa-se os bits em conjuntos de três, começando da direita para a esquerda (adicionando zeros à esquerda se necessário), e substitui-se cada grupo pelo seu dígito octal correspondente. Por exemplo, o binário 11010110 pode ser agrupado como (011)(010)(110), que corresponde a 326 em octal. Para converter de octal para decimal, utiliza-se a expansão pela base 8. O número octal 326 seria (3 × 8<sup>2</sup>) + (2 × 8<sup>1</sup>) + (6 × 8<sup>0</sup>) = (3 × 64) + (2 × 8) + (6 × 1) = 192 + 16 + 6 = 214 em decimal. Embora o sistema hexadecimal tenha se tornado mais prevalente na computação moderna devido à sua relação ainda mais direta com a arquitetura de bytes (8 bits), a compreensão do sistema octal ainda é útil em certos contextos e como um passo intermediário para entender a relação entre diferentes bases numéricas.</p>
+        </section>
+        <section id="hexadecimal">
+            <h2>Sistema Hexadecimal (Base 16)</h2>
+            <p>O sistema numérico hexadecimal, ou base 16, é amplamente utilizado na computação e programação, especialmente para representar endereços de memória, cores e outros dados de baixo nível de forma mais concisa do que o binário. Este sistema utiliza dezesseis símbolos distintos: os dígitos de 0 a 9, complementados pelas letras A, B, C, D, E e F para representar os valores decimais de 10 a 15, respectivamente (A=10, B=11, C=12, D=13, E=14, F=15). Assim como os outros sistemas, o hexadecimal é posicional, com cada posição representando uma potência de 16. A posição mais à direita é 16<sup>0</sup> (1), a seguinte é 16<sup>1</sup> (16), depois 16<sup>2</sup> (256), e assim por diante.</p>
+            <p>A principal vantagem do hexadecimal na computação reside na sua relação direta com o sistema binário. Como 16 é uma potência de 2 (16 = 2<sup>4</sup>), cada dígito hexadecimal corresponde exatamente a quatro dígitos binários (um nibble). Isso torna a conversão entre hexadecimal e binário extremamente simples e eficiente. Para converter de binário para hexadecimal, agrupa-se os bits em conjuntos de quatro, da direita para a esquerda, e substitui-se cada grupo pelo seu dígito hexadecimal correspondente. Por exemplo, o binário 11010110 pode ser agrupado como (1101)(0110), que corresponde a D6 em hexadecimal (1101<sub>2</sub> = 13<sub>10</sub> = D<sub>16</sub> e 0110<sub>2</sub> = 6<sub>10</sub> = 6<sub>16</sub>). Para converter de hexadecimal para decimal, usa-se a expansão pela base 16. O número hexadecimal D6 seria (D × 16<sup>1</sup>) + (6 × 16<sup>0</sup>) = (13 × 16) + (6 × 1) = 208 + 6 = 214 em decimal. A representação hexadecimal é muito mais curta que a binária (D6 vs 11010110), tornando-a preferível para exibir e manipular grandes sequências de bits, como as encontradas em programação de baixo nível, depuração de código e representação de cores em design web (por exemplo, #FFFFFF para branco).</p>
+        </section>
+
+        <section id="comparativo">
+            <h2>Tabela Comparativa dos Sistemas Numéricos</h2>
+            <p>Para visualizar melhor as relações entre os sistemas numéricos, apresentamos uma tabela comparativa com os valores de 0 a 16 em decimal e seus equivalentes em binário, octal e hexadecimal. Observe como os padrões se formam e como as bases se relacionam, especialmente a relação direta entre binário, octal (grupos de 3 bits) e hexadecimal (grupos de 4 bits).</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Decimal (Base 10)</th>
+                            <th>Binário (Base 2)</th>
+                            <th>Octal (Base 8)</th>
+                            <th>Hexadecimal (Base 16)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>0000</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>0001</td><td>1</td><td>1</td></tr>
+                        <tr><td>2</td><td>0010</td><td>2</td><td>2</td></tr>
+                        <tr><td>3</td><td>0011</td><td>3</td><td>3</td></tr>
+                        <tr><td>4</td><td>0100</td><td>4</td><td>4</td></tr>
+                        <tr><td>5</td><td>0101</td><td>5</td><td>5</td></tr>
+                        <tr><td>6</td><td>0110</td><td>6</td><td>6</td></tr>
+                        <tr><td>7</td><td>0111</td><td>7</td><td>7</td></tr>
+                        <tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+                        <tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+                        <tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+                        <tr><td>11</td><td>1011</td><td>13</td><td>B</td></tr>
+                        <tr><td>12</td><td>1100</td><td>14</td><td>C</td></tr>
+                        <tr><td>13</td><td>1101</td><td>15</td><td>D</td></tr>
+                        <tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
+                        <tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
+                        <tr><td>16</td><td>10000</td><td>20</td><td>10</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Esta tabela ilustra como um mesmo valor quantitativo é representado de formas diferentes dependendo da base numérica utilizada. A escolha da base depende do contexto; enquanto usamos decimal no dia a dia, binário é a linguagem dos computadores, e octal e hexadecimal servem como representações mais compactas do binário.</p>
+            <h3>Visualização Gráfica: Crescimento do Número de Dígitos</h3>
+            <p>O gráfico abaixo ilustra como o número de dígitos necessários para representar um valor cresce em cada sistema numérico. Observe como bases menores (como binário) exigem mais dígitos para representar números maiores em comparação com bases maiores (como hexadecimal).</p>
+            <div class="chart-container" style="position: relative; height:40vh; width:80vw; margin: auto;">
+                <canvas id="digitGrowthChart"></canvas>
+            </div>
+        </section>
+
+        <section id="exercicios">
+            <h2>Exercícios de Fixação</h2>
+            <p>Teste seus conhecimentos sobre sistemas numéricos com os exercícios abaixo. Tente resolvê-los e depois confira o gabarito explicado para verificar suas respostas e entender o processo de conversão.</p>
+
+            <div class="exercicio">
+                <h3>Exercício 1: Decimal para Binário</h3>
+                <p>Converta o número decimal <strong>42</strong> para o sistema binário.</p>
+                <button class="toggle-resposta" onclick="toggleResposta('resposta1')">Mostrar/Ocultar Resposta</button>
+                <div id="resposta1" class="resposta" style="display: none;">
+                    <h4>Resposta Explicada:</h4>
+                    <p>Para converter 42 (decimal) para binário, usamos divisões sucessivas por 2:</p>
+                    <ul>
+                        <li>42 ÷ 2 = 21, resto <strong>0</strong></li>
+                        <li>21 ÷ 2 = 10, resto <strong>1</strong></li>
+                        <li>10 ÷ 2 = 5, resto <strong>0</strong></li>
+                        <li>5 ÷ 2 = 2, resto <strong>1</strong></li>
+                        <li>2 ÷ 2 = 1, resto <strong>0</strong></li>
+                        <li>1 ÷ 2 = 0, resto <strong>1</strong></li>
+                    </ul>
+                    <p>Lendo os restos de baixo para cima, obtemos: <strong>101010</strong><sub>2</sub>.</p>
+                </div>
+            </div>
+
+            <div class="exercicio">
+                <h3>Exercício 2: Binário para Hexadecimal</h3>
+                <p>Converta o número binário <strong>11101011</strong> para o sistema hexadecimal.</p>
+                <button class="toggle-resposta" onclick="toggleResposta('resposta2')">Mostrar/Ocultar Resposta</button>
+                <div id="resposta2" class="resposta" style="display: none;">
+                    <h4>Resposta Explicada:</h4>
+                    <p>Para converter 11101011 (binário) para hexadecimal, agrupamos os bits em conjuntos de 4, da direita para a esquerda:</p>
+                    <ul>
+                        <li>Grupo 1 (direita): 1011</li>
+                        <li>Grupo 2 (esquerda): 1110</li>
+                    </ul>
+                    <p>Agora, convertemos cada grupo para seu dígito hexadecimal correspondente:</p>
+                    <ul>
+                        <li>1011<sub>2</sub> = 11<sub>10</sub> = <strong>B</strong><sub>16</sub></li>
+                        <li>1110<sub>2</sub> = 14<sub>10</sub> = <strong>E</strong><sub>16</sub></li>
+                    </ul>
+                    <p>Juntando os dígitos, obtemos: <strong>EB</strong><sub>16</sub>.</p>
+                </div>
+            </div>
+
+            <div class="exercicio">
+                <h3>Exercício 3: Octal para Decimal</h3>
+                <p>Converta o número octal <strong>75</strong> para o sistema decimal.</p>
+                <button class="toggle-resposta" onclick="toggleResposta('resposta3')">Mostrar/Ocultar Resposta</button>
+                <div id="resposta3" class="resposta" style="display: none;">
+                    <h4>Resposta Explicada:</h4>
+                    <p>Para converter 75 (octal) para decimal, usamos a expansão pela base 8:</p>
+                    <p>75<sub>8</sub> = (7 × 8<sup>1</sup>) + (5 × 8<sup>0</sup>)</p>
+                    <p>= (7 × 8) + (5 × 1)</p>
+                    <p>= 56 + 5</p>
+                    <p>= <strong>61</strong><sub>10</sub>.</p>
+                </div>
+            </div>
+
+            <div class="exercicio">
+                <h3>Exercício 4: Hexadecimal para Decimal</h3>
+                <p>Converta o número hexadecimal <strong>1A3</strong> para o sistema decimal.</p>
+                <button class="toggle-resposta" onclick="toggleResposta('resposta4')">Mostrar/Ocultar Resposta</button>
+                <div id="resposta4" class="resposta" style="display: none;">
+                    <h4>Resposta Explicada:</h4>
+                    <p>Para converter 1A3 (hexadecimal) para decimal, usamos a expansão pela base 16 (lembrando que A = 10):</p>
+                    <p>1A3<sub>16</sub> = (1 × 16<sup>2</sup>) + (A × 16<sup>1</sup>) + (3 × 16<sup>0</sup>)</p>
+                    <p>= (1 × 256) + (10 × 16) + (3 × 1)</p>
+                    <p>= 256 + 160 + 3</p>
+                    <p>= <strong>419</strong><sub>10</sub>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="conversor">
+            <h2>Conversor de Sistemas Numéricos</h2>
+            <p>Utilize o conversor abaixo para transformar números entre as bases decimal, binária, octal e hexadecimal em tempo real.</p>
+            <div class="conversor-container">
+                <div class="conversor-grupo">
+                    <label for="decimalInput">Decimal (Base 10):</label>
+                    <input type="text" id="decimalInput" oninput="converter(10)" placeholder="Ex: 42">
+                </div>
+                <div class="conversor-grupo">
+                    <label for="binarioInput">Binário (Base 2):</label>
+                    <input type="text" id="binarioInput" oninput="converter(2)" placeholder="Ex: 101010">
+                </div>
+                <div class="conversor-grupo">
+                    <label for="octalInput">Octal (Base 8):</label>
+                    <input type="text" id="octalInput" oninput="converter(8)" placeholder="Ex: 52">
+                </div>
+                <div class="conversor-grupo">
+                    <label for="hexadecimalInput">Hexadecimal (Base 16):</label>
+                    <input type="text" id="hexadecimalInput" oninput="converter(16)" placeholder="Ex: 2A">
+                </div>
+                <div id="erroConversor" class="erro-msg" style="display: none; color: red; margin-top: 10px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Carlos Henrique - <a href="https://www.linkedin.com/in/carlosoliver/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
